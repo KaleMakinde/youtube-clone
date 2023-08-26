@@ -5,16 +5,17 @@ import Sidebar from './components/sidebar/Sidebar'
 import { Container } from 'react-bootstrap'
 import HomeScreen from './components/screens/homeScreen/HomeScreen'
 
+import "./_app.scss"
+
 const App = () => {
   return (
     <>
     <Header/>
-    <div className="app_container border border-info">
+    <div className="app__container border border-info">
          <Sidebar/>
 
          <Container fluid className='app__main border border-warning'>
             <HomeScreen/>
-
          </Container>
     </div>
     </>
