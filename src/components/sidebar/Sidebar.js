@@ -16,7 +16,8 @@ import {
 
 const Sidebar = ({sidebar, handleToggleSidebar}) => {
   return (
-    <nav className={sidebar ? "sidebar open" : "sidebar"}
+    <nav 
+    className={sidebar ? "sidebar open" : "sidebar"} 
     onClick={()=>handleToggleSidebar(false)}>
         <li>
             <MdHome size={23}/>
