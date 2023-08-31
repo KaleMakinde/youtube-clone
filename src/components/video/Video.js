@@ -1,13 +1,31 @@
 import React from 'react'
 import "./_video.scss";
 
+import { AiFillEye } from 'react-icons/ai';
+
+
+
 const Video = () => {
   return (
     <div className="video">
-      <div className="video__top"></div>
-      <div className="video__title"></div>
-      <div className="video__details"></div>
-      <div className="video__channnel"></div>
+      <div className="video__top">
+        <img src="" alt="" />
+        <span>05:43</span>
+        
+      </div>
+      <div className="video__title">
+        Create app in 5 minutes by kale
+      </div>
+      <div className="video__details">
+        <span> 
+        <AiFillEye /> 5m views •
+        </span>
+        <span>5 days ago  </span>
+      </div>
+      <div className="video__channnel">
+        <img src=" " alt="" />
+        <p>Rainbow Hat  jnr</p>
+      </div>
     </div>
   )
 }
