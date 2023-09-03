@@ -9,7 +9,7 @@ const Video = () => {
   return (
     <div className="video">
       <div className="video__top">
-        <img src="" alt="" />
+        <img src="https://i.ytimg.com/vi/P6LGqx1YCtc/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAGpnaD7mZuwzALv63qHCAWiCWUpA" alt="" />
         <span>05:43</span>
         
       </div>
@@ -23,8 +23,8 @@ const Video = () => {
         <span>5 days ago  </span>
       </div>
       <div className="video__channnel">
-        <img src=" " alt="" />
-        <p>Rainbow Hat  jnr</p>
+        <img src="https://yt3.ggpht.com/6rl9vGYugrKneSe62XXmQAbbwVefK3crBlL5VjJIWqmzZOoUg1TXouz7K3Nve4XpFSkMJP9J6Q=s68-c-k-c0x00ffffff-no-rj " alt="" />
+        <p>Full Functional E-commerce Website using React JS | complete ecommerce website using react JS</p>
       </div>
     </div>
   )
