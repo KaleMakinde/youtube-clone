@@ -1,0 +1,20 @@
+@import "../../_base.scss";
+
+
+.login{
+height: 100vh;
+display: grid;
+
+place-items: center;
+
+&__container{
+    background-color: $black-secondary;
+}
+
+
+    img{
+        width: 130px;
+        height: 130px;
+        object-fit: contain;
+    }
+}
