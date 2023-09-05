@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap'
 import HomeScreen from './components/screens/homeScreen/HomeScreen'
 
 import "./_app.scss"
+import LoginScreen from './components/screens/homeScreen/loginScreen/loginScreen'
 
 const App = () => {
 
@@ -17,19 +18,20 @@ const App = () => {
 
 
   return (
-    <>
-    <Header handleToggleSidebar={handleToggleSidebar}/>
-    <div className="app__container border border-info">
-         <Sidebar 
-         sidebar={sidebar}
-         handleToggleSidebar={handleToggleSidebar}
-         />
+    // <>
+    // <Header handleToggleSidebar={handleToggleSidebar}/>
+    // <div className="app__container border border-info">
+    //      <Sidebar 
+    //      sidebar={sidebar}
+    //      handleToggleSidebar={handleToggleSidebar}
+    //      />
 
-         <Container fluid className='app__main border border-warning'>
-            <HomeScreen/>
-         </Container>
-    </div>
-    </>
+    //      <Container fluid className='app__main border border-warning'>
+    //         <HomeScreen/>
+    //      </Container>
+    // </div>
+    // </>
+    <LoginScreen/>
   )
 }
 
