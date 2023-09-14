@@ -1,5 +1,7 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {useHistory} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 import './loginScreen.scss';
 import { login } from '../../../../redux/actions/auth.action';
@@ -9,9 +11,36 @@ const LoginScreen = () => {
 
 const dispatch = useDispatch()
 
+const accessToken = useSelector(state=>state.auth.accessToken)
+
 const handleLogin = () => {
   dispatch(login())
 }
+
+const navigate = useNavigate(); // Use useNavigate instead of useHistory
+
+useEffect(() => {
+  if (accessToken) {
+    navigate('/'); // Use navigate('/path') to navigate to the home route
+  }
+}, [accessToken, navigate]);
+
+
+// const history = useHistory();
+
+// useEffect(() => {
+//   if (accessToken) {
+//     history.push('/')
+    
+//   }
+// },[accessToken])
+
+
+// useEffect(() =>{
+//   if (accessToken) {
+    
+//   }
+// },[accessToken])
 
   return (
     <div className="login">
