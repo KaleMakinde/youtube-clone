@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {useHistory} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 
 import './loginScreen.scss';
 import { login } from '../../../../redux/actions/auth.action';
+
+
 
 
 const LoginScreen = () => {
