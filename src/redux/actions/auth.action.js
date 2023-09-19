@@ -19,8 +19,6 @@ export const login = () => async dispatch => {
         const provider = new firebase.auth.GoogleAuthProvider();
     
         const res = await auth.signInWithPopup(provider);
-        console.log(res);
-    
         const accessToken = res.credential.accessToken;
     
 
@@ -29,7 +27,10 @@ export const login = () => async dispatch => {
             name: res.additionalUserInfo.profile.name,
             photoURL: res.additionalUserInfo.profile.picture,
         }
-        console.log(profile)
+
+        sessionStorage.setItem('ytc-access-token', accessToken)
+        sessionStorage.setItem('ytc-user', JSON.stringify(profile))
+        
 
         dispatch({
             type: LOGIN_SUCCESS,
