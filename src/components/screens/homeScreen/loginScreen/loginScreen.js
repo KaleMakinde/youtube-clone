@@ -49,7 +49,7 @@ useEffect(() => {
             <img src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png" 
             alt="" />
             <button onClick={handleLogin}> Login with google</button>
-            <p>This Project is made using YOUTUBE DATA API</p>
+            <p>This Project is made using YOUTUBE DATA API </p>
         </div>
     </div>
   )

@@ -26,7 +26,7 @@ const Video = () => {
       <img src="https://yt3.ggpht.com/6rl9vGYugrKneSe62XXmQAbbwVefK3crBlL5VjJIWqmzZOoUg1TXouz7K3Nve4XpFSkMJP9J6Q=s68-c-k-c0x00ffffff-no-rj" alt="" width="40" height="40"/>
 
 
-        <p>Full Functional E-commerce Website using React JS | complete ecommerce website using react JS</p>
+      <p>Full Functional E-commerce Website using React JS | complete ecommerce website using react JS</p>
       </div>
     </div>
   )
